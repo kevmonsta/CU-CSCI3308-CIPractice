@@ -1,6 +1,6 @@
-# Andy Sayler
+# Kevin Eastman
 # CI Practice
-# Summer 2014
+# Spring 2018
 
 CC = gcc
 CFLAGS = -c -g -Wall -Wextra
@@ -29,3 +29,6 @@ clean:
 	$(RM) *.o
 	$(RM) geometry_test
 	$(RM) *~
+test:
+	make geometry_test
+	./geometry_test
